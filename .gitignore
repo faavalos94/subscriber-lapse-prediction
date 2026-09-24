@@ -1,0 +1,19 @@
+# data — never commit, see README for download instructions
+data/*
+!data/.gitkeep
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# models and artifacts
+*.joblib
+*.pkl
+
+# os
+.DS_Store
+models/*
+!models/.gitkeep
