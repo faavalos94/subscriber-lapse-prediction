@@ -126,8 +126,9 @@ c1.metric("Test ROC-AUC", "0.896")
 c2.metric("Recall (lapsed)", "0.835")
 c3.metric("Accuracy", "0.816")
 
-with st.expander("How this works"):
-    st.markdown("""
+st.subheader("How this works")
+
+st.markdown("""
 The dataset has no "churn" column — only a log of timestamped events.
 The labels are constructed by picking an **anchor date** and treating it
 as the present:
@@ -144,4 +145,4 @@ split would let the model learn from the future to predict the past.
 
 Data: MovieLens 25M, used as a stand-in for a streaming engagement log.
 """)
-    st.markdown(f"[Full write-up and code on GitHub]({REPO})")
+st.markdown(f"[Full write-up and code on GitHub]({REPO})")
