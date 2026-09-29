@@ -2,7 +2,7 @@
 
 Predicting which active users of a content platform will stop engaging, using only data available at the moment of prediction.
 
-**[Live demo](https://subscriber-lapse-prediction.streamlit.app/)** - browse real held-out users and see the model's prediction against what actually happened.
+**[Live demo](https://subscriber-lapse-prediction.streamlit.app/)** — browse real held-out users and see the model's prediction against what actually happened.
 
 ## The problem
 
@@ -117,6 +117,8 @@ streamlit run app.py
 
 ## Data
 
-MovieLens 25M, from GroupLens. Not committed — the licence prohibits redistribution.
+MovieLens 25M, from GroupLens, used as a stand-in for a streaming engagement log. The dataset is not committed — run `python src/download_data.py` to fetch it.
+
+Code in this repo is MIT licensed. The MovieLens dataset is subject to GroupLens' own terms and is not redistributed here. The sample in `demo/` is aggregated per-user statistics with anonymised IDs, derived from the dataset rather than copied from it.
 
 Harper & Konstan (2015), *The MovieLens Datasets: History and Context*, ACM TiiS 5(4).
