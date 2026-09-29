@@ -17,3 +17,7 @@ venv/
 .DS_Store
 models/*
 !models/.gitkeep
+
+# demo needs these committed
+!models/model.joblib
+!demo/sample_users.csv

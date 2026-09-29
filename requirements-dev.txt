@@ -1,0 +1,5 @@
+-r requirements.txt
+jupyter>=1.0
+ipykernel>=6.0
+matplotlib>=3.7
+pyarrow>=14.0
