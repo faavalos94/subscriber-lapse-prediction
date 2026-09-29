@@ -1,6 +1,7 @@
 # Subscriber Lapse Prediction
 
 Predicting which active users of a content platform will stop engaging, using only data available at the moment of prediction.
+
 **[Live demo](https://subscriber-lapse-prediction.streamlit.app/)** - browse real held-out users and see the model's prediction against what actually happened.
 
 ## The problem
