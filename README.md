@@ -35,7 +35,7 @@ The model trains on a snapshot from 2018-01-01 and is tested on a snapshot from 
 
 ## Features
 
-Thirteen behavioural features computed strictly before the anchor: recency, activity counts at four time scales, breadth (distinct movies, distinct active days), rating behaviour, a short-term trend, and lifetime facts (tenure, total ratings).
+Thirteen behavioral features computed strictly before the anchor: recency, activity counts at four time scales, breadth (distinct movies, distinct active days), rating behavior, a short-term trend, and lifetime facts (tenure, total ratings).
 
 ## Results
 
@@ -65,7 +65,7 @@ Random Forest beat logistic regression 0.8925 to 0.8802 — about two standard d
 | `recency_days` | 0.8937 | -0.0022 |
 | `per_active_day` | 0.8958 | -0.0001 |
 
-Permutation importance was measuring redundancy. The features are correlated views of the same behaviour, so removing any one lets the rest reconstruct the signal. Drop-column is the more honest test when features overlap.
+Permutation importance was measuring redundancy. The features are correlated views of the same behavior, so removing any one lets the rest reconstruct the signal. Drop-column is the more honest test when features overlap.
 
 **Recent activity volume is a proxy for being new.** Lapse rate by 90-day activity is non-monotonic (0.50, 0.31, 0.49, 0.60, 0.61), which reads as "heavy users churn more." Median tenure explains it:
 
@@ -80,7 +80,7 @@ Heavy recent activity means a new user working through a back catalogue. Tenure 
 ## What I'd do differently
 
 - Test more than two anchors. Two snapshots show the model holds for one year, not that it holds generally.
-- Try pruning the feature set. Removing any single feature barely moved performance, which suggests the thirteen are overlapping views of the same behaviour rather than independent signals. A smaller set would probably hold up and be easier to maintain.
+- Try pruning the feature set. Removing any single feature barely moved performance, which suggests the thirteen are overlapping views of the same behavior rather than independent signals. A smaller set would probably hold up and be easier to maintain.
 - MovieLens ratings are a proxy for viewing. Real watch data would support session-level features this cannot.
 
 ## Repo layout
@@ -88,7 +88,7 @@ Heavy recent activity means a new user working through a back catalogue. Tenure 
 ```
 notebooks/
   01-label-construction.ipynb        windows, eligibility, labels
-  02-feature-engineering.ipynb       behavioural features
+  02-feature-engineering.ipynb       behavioral features
   03-modeling-and-evaluation.ipynb   models, tuning, backtest
 app.py                               Streamlit demo
 demo/sample_users.csv                300 held-out users for the demo
