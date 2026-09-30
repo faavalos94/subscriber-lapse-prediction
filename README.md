@@ -39,7 +39,7 @@ Thirteen behavioural features computed strictly before the anchor: recency, acti
 
 ## Results
 
-Random Forest, tuned by randomised search with 5-fold cross-validation.
+Random Forest, tuned by randomized search with 5-fold cross-validation.
 
 | | Cross-validation (2018) | Test (2019) |
 |---|---|---|
